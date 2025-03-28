@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<center>
+
+    <head>
+        <meta charset="UTF -8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+        <title>SAMPLE PROJECT</title>
+        <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif;"><span>YAY! IT'S BOGO</span>
+    </head>
+
+    <BODY>
+
+        <!-- Units Selection 1-->
+
+        <div class="interbox">
+            <div><input type="radio" name="unit" value="1"> 1 Unit
+                <p> 10% Off </p>
+                <h4>$10.00 USD</h4>
+                <h3>$24.00 USD</h3>
+                <div id="options-1" class="options">
+                    <table>
+                        <tr>
+                            <td>Size</td>
+                            <td>Colour</td>
+                        </tr>
+                        <tr>
+                            <td><select>
+
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+
+                                </select></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!--Units Selection 2-->
+
+        <div class="interbox">
+            <div><input type="radio" name="unit" value="2"> 2 Unit
+                <p> 20% Off</p>
+                <h4>$18.00 USD</h4>
+                <h3>$24.00 USD</h3>
+                <div id="options-2" class="options">
+                    <table>
+                        <tr>
+                            <td>Size</td>
+                            <td>Colour</td>
+                        </tr>
+                        <tr>
+                            <td>#1<select>
+
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+
+                                </select></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>#2<select>
+
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Units Selection 3-->
+        <div class="interbox">
+            <div><input type="radio" name="unit" value="3"> 3 Unit
+                <p> 30% Off </p>
+                <h4>$24.00 USD</h4>
+                <h3 style="text-decoration: none;">$24.00 USD</h3>
+                <div id="options-3" class="options">
+                    <table>
+                        <tr>
+                            <td> Size</td>
+                            <td>Colour</td>
+                        </tr>
+                        <tr>
+                            <td>#1<select>
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>#2<select>
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>#3<select>
+                                    <option>S</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select></td>
+                            <td><select>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    <option>Red</option>
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="text">
+            <div class="freedel">Free Delivery</div>
+            <h5>Total:$18.00 USD</h5>
+        </div>
+        <!--add to cart button-->
+        <button> + Add to Cart</button>
+
+        <!--JavaScript code-->
+
+        <script>
+            const radios = document.querySelectorAll('input[name="unit"]');
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', function () {
+                    document.querySelectorAll('.options').forEach(option => {
+                        option.style.display = 'none';
+                    });
+
+                    // Show only the selected option
+                    const selectedOption = document.getElementById(`options-${this.value}`);
+                    if (selectedOption) {
+                        selectedOption.style.display = 'block';
+                    }
+                });
+            });
+        </script>
+    </BODY>
+    </div>
+</center>
+
+</html>

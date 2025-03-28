@@ -1,0 +1,133 @@
+/*container*/
+.container {
+    width: 400px;
+    border: solid #b9b3b4 1px;
+    padding-top: 5px;
+    padding-bottom: 19px;
+    border-radius: 1px;
+
+}
+
+/*heading*/
+span {
+    width: 343px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FF6B82;
+}
+
+span::before,
+span::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #b9b3b4;
+    margin: 0 3px;
+    margin-top: 10px;
+}
+
+/*each box*/
+
+.interbox {
+    width: 343px;
+    padding-top: 5px;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: solid rgb(202, 198, 198) 1px;
+    color: rgb(19, 18, 18);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    display: inline;
+    background-color: rgb(231, 71, 98);
+    color: white;
+    font-weight: lighter;
+}
+
+h4 {
+    display: inline;
+    padding-left: 90px;
+}
+
+h3 {
+    display: inline;
+    padding-left: 228px;
+    text-decoration: line-through;
+    font: weight 500px;
+    color: rgb(179, 172, 172);
+    font-size: small;
+}
+
+
+.options select {
+    width: 100px;
+    padding: 5px;
+    height: fit-content;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+
+}
+
+h5 {
+    display: inline;
+    padding-left: 145px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(73, 68, 68)
+}
+
+.text {
+    width: 343px;
+    text-align: left;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.options {
+    display: none;
+    margin-top: 10px;
+
+}
+
+
+td {
+    font-weight: lighter;
+    font-size: small;
+}
+
+/*free delivery*/
+.freedel {
+    display: inline;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+
+    color: rgb(216, 60, 133);
+}
+
+/*Add to cart button*/
+
+button {
+    width: 343px;
+    height: 30px;
+    background-color: rgb(216, 60, 133);
+    margin-top: 15px;
+    color: blanchedalmond;
+    padding-top: 1px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    border-radius: 3px;
+    border: 0;
+}
